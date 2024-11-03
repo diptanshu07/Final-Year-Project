@@ -1,48 +1,79 @@
 import React from 'react';
-import { Box, Container, Typography, Grid, Link } from '@mui/material';
+import { Box, Container, Typography, Grid, Link, IconButton } from '@mui/material';
+import { Facebook, Twitter, Instagram, LinkedIn, Email, Phone } from '@mui/icons-material';
 
 const Footer = () => {
   return (
     <Box sx={{ bgcolor: 'black', color: 'white', py: 6 }}>
-      <Container maxWidth="lg" max-h-100 >
+      <Container maxWidth="lg">
         <Grid container spacing={4}>
+          {/* Company Information */}
           <Grid item xs={12} md={6}>
-            <Typography variant="h2" gutterBottom>
-              Clever  
+            <Typography variant="h4" gutterBottom>
+              Clever
             </Typography>
-            
             <Typography variant="body2">
               Gol Building, Newtown<br />
               South Kolkata, 700231<br />
               +91 9000000001
             </Typography>
-            
           </Grid>
-          <Grid item xs={20} md={60}>
-            
+          
+          {/* Contact Us Section */}
+          <Grid item xs={12} md={6} sx={{ pl: 4 }}>
+            <Typography variant="h6" gutterBottom>Contact Us</Typography>
+            <Box display="flex" alignItems="center" mb={1}>
+              <Email fontSize="small" sx={{ mr: 1 }} />
+              <Typography variant="body2">contact@clever.com</Typography>
+            </Box>
+            <Box display="flex" alignItems="center">
+              <Phone fontSize="small" sx={{ mr: 1 }} />
+              <Typography variant="body2">+91 9000000001</Typography>
+            </Box>
           </Grid>
-          <Grid container spacing={20} justifyContent="right">
-            <Grid item xs={12} md={4}>
-              <Box>
-                <Typography variant="body2">
-                  <Link href="#" color="inherit" underline="hover">
-                    Terms and Conditions
-                  </Link>
-                </Typography>
-                <Typography variant="body2" mt={1}>
-                  <Link href="#" color="inherit" underline="hover">
-                    Help
-                  </Link>
-                </Typography>
-                <Typography variant="body2" mt={1}>
-                  <Link href="#" color="inherit" underline="hover">
-                    Privacy Policies
-                  </Link>
-                </Typography>
-              </Box>
-            </Grid>
+
+          {/* Links and Policies */}
+          <Grid item xs={12} md={4}>
+            <Typography variant="body2">
+              <Link href="#" color="inherit" underline="hover">
+                Terms and Conditions
+              </Link>
+            </Typography>
+            <Typography variant="body2" mt={1}>
+              <Link href="#" color="inherit" underline="hover">
+                Help
+              </Link>
+            </Typography>
+            <Typography variant="body2" mt={1}>
+              <Link href="#" color="inherit" underline="hover">
+                Privacy Policies
+              </Link>
+            </Typography>
+          </Grid>
+
+          {/* Social Media Icons */}
+          <Grid item xs={12} md={4} display="flex" alignItems="center" justifyContent="center">
+            <IconButton href="#" color="inherit">
+              <Facebook />
+            </IconButton>
+            <IconButton href="#" color="inherit">
+              <Twitter />
+            </IconButton>
+            <IconButton href="#" color="inherit">
+              <Instagram />
+            </IconButton>
+            <IconButton href="#" color="inherit">
+              <LinkedIn />
+            </IconButton>
           </Grid>
         </Grid>
+
+        {/* Footer Bottom Text */}
+        <Box mt={4} textAlign="center">
+          <Typography variant="body2">
+            &copy; 2024 Clever. Designed by You.
+          </Typography>
+        </Box>
       </Container>
     </Box>
   );
