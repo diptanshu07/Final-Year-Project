@@ -1,4 +1,5 @@
 import React from 'react';
+// import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline, Container } from '@mui/material';
 import Navbar from './components/Navbar';
@@ -7,6 +8,9 @@ import Features from './components/Features';
 import Solutions from './components/Solutions';
 import Pricing from './components/Pricing';
 import Footer from './components/Footer';
+import SignInOutContainer from './containers';
+import Login from './components/login';
+import Signup from './components/signup';
 
 const theme = createTheme({
   palette: {
@@ -31,15 +35,25 @@ const theme = createTheme({
 });
 
 function App() {
+  // const router = createBrowserRouter ([
+  //   {
+  //     path: "/Register",
+  //     element: <SignInOutContainer/>
+  //   },
+  // ])
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navbar />
+      {/* <RouterProvider router={router} /> */}
       <Container maxWidth="lg">
       <section id="hero"> <Hero /> </section>
         <section id="features"><Features /></section>
         <section id="solutions"><Solutions /></section>
         <section id="pricing"><Pricing /></section>
+        {/* <section id="register"><SignInOutContainer/> </section> */}
+        
       </Container>
       <section id="about"><Footer /></section>
     </ThemeProvider>

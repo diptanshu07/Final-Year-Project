@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button, Grid2 } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import Heropng from "../assets/chat.png"
 
 const HeroSection = styled(Box)(({ theme }) => ({
   padding: theme.spacing(10, 0),
@@ -25,7 +26,11 @@ const Hero = () => {
           </Button>
         </Grid2>
         <Grid2 item xs={12} md={6}>
-          {/* for a photo on the right side*/}
+        <img
+          src={Heropng}
+          alt="Description of the photo"
+          style={{ width: '100%', height: 'auto' }}
+        />
         </Grid2>
       </Grid2>
     </HeroSection>
