@@ -37,8 +37,7 @@ const Hero = () => {
         <img
           src={Heropng}
           alt="Description of the photo"
-          style={{ width: '100%', height: 'auto',
-            background: 'linear-gradient(45deg, #fff8f6 30%, #ffe5e0 90%)'
+          style={{ width: '100%', height: 'auto'
            }}
         />
         </Grid2>
