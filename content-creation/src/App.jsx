@@ -52,7 +52,8 @@ function App() {
         <section id="features"><Features /></section>
         <section id="solutions"><Solutions /></section>
         <section id="pricing"><Pricing /></section>
-        {/* <section id="register"><SignInOutContainer/> </section> */}
+        <section id="register"><SignInOutContainer/> </section> 
+        {/* login page container */}
         
       </Container>
       <section id="about"><Footer /></section>
