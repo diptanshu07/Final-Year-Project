@@ -39,16 +39,66 @@ const Header = () => {
                 value={value}
                 onChange={(e, value) => setValue(value)}
               >
-                <Tab label="Home" />
-                <Tab label="Features" />
-                <Tab label="Solutions" />
-                <Tab label="Pricing" />
-                <Tab label="Contact Us" />
+                <Tab label="Home" 
+                    onClick={() => {
+                        const element = document.getElementById("hero");
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }}
+                />
+                <Tab label="Features" 
+                    onClick={() => {
+                        const element = document.getElementById("features");
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }}    
+                />
+                <Tab label="Solutions" 
+                    onClick={() => {
+                        const element = document.getElementById("solutions");
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }}
+                />
+
+                <Tab label="Pricing" 
+                    onClick={() => {
+                        const element = document.getElementById("pricing");
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }}
+                />
+                <Tab label="Contact Us" 
+                    onClick={() => {
+                        const element = document.getElementById("footer");
+                        if (element) {
+                          element.scrollIntoView({ behavior: "smooth" });
+                        }
+                    }}
+                />
               </Tabs>
-              <Button sx={{ marginLeft: "auto" }} variant="contained">
+              <Button sx={{ marginLeft: "auto" }} variant="contained"
+                onClick={() => {
+                    const element = document.getElementById("register");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                }}
+              >
                 Login
               </Button>
-              <Button sx={{ marginLeft: "10px" }} variant="contained">
+              <Button sx={{ marginLeft: "10px" }} variant="contained"
+                onClick={() => {
+                    const element = document.getElementById("register");
+                    if (element) {
+                      element.scrollIntoView({ behavior: "smooth" });
+                    }
+                }}
+              >
                 SignUp
               </Button>
             </>
