@@ -9,6 +9,7 @@ import Solutions from './components/Solutions';
 import Pricing from './components/Pricing';
 import Footer from './components/Footer';
 import SignInOutContainer from './containers';
+import Header from './components/Header';
 import Login from './components/login';
 import Signup from './components/signup';
 
@@ -45,7 +46,8 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Navbar />
+      {/* <Navbar /> */}
+      <Header/>
       {/* <RouterProvider router={router} /> */}
       <Container maxWidth="lg">
       <section id="hero"> <Hero /> </section>
