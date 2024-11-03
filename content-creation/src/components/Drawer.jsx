@@ -8,7 +8,16 @@ import {
   ListItemText,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-const pages = ["Products", "Services", "ABoutUs", "ContactUs"];
+import { Link } from "react-router-dom";
+
+const pages = [
+    { name: "Home", path: "hero" },
+    { name: "Features", path: "features" },
+    { name: "Solutions", path: "solutions" },
+    { name: "Pricings", path: "pricing" },
+    { name: "Contact Us", path: "footer" }
+];
+
 const DrawerComp = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
@@ -21,19 +30,19 @@ const DrawerComp = () => {
       >
         <List>
           {pages.map((page, index) => (
-            <ListItemButton key={index}>
+            <ListItemButton key={index} component={Link} to={page.path} onClick={() => setOpenDrawer(false)} id={`drawer-item-${index}`}>
               <ListItemIcon>
-                <ListItemText>{page}</ListItemText>
+                <ListItemText>{page.name}</ListItemText>
               </ListItemIcon>
             </ListItemButton>
           ))}
         </List>
       </Drawer>
       <IconButton
-        sx={{ color: "white", marginLeft: "auto" }}
+        sx={{ color: "black", marginLeft: "auto"}}
         onClick={() => setOpenDrawer(!openDrawer)}
       >
-        <MenuIcon color="white" />
+        <MenuIcon color="black" />
       </IconButton>
     </React.Fragment>
   );

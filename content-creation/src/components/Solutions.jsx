@@ -16,8 +16,8 @@ const Solutions = () => {
   ];
 
   return (
-    <Box sx={{ py: 8 }}>
-      <Typography variant="h2" gutterBottom>
+    <Box sx={{ py: 8 }} background='black'>
+      <Typography variant="h2" gutterBottom >
         Comprehensive and Highly Advanced Tools and Capabilities
       </Typography>
       <List>

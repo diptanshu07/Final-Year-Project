@@ -17,8 +17,8 @@ const Login=({handleChange})=>{
                      <Avatar style={avatarStyle}><LockOutlinedIcon/></Avatar>
                     <h2>Sign In</h2>
                 </Grid2>
-                <TextField label='Username' placeholder='Enter username' fullWidth required/>
-                <TextField label='Password' placeholder='Enter password' type='password' fullWidth required/>
+                <TextField label='Username' placeholder='Enter username' fullWidth required style={{ marginBottom: '1rem' }}/>
+                <TextField label='Password' placeholder='Enter password' type='password' fullWidth required style={{ marginBottom: '1rem' }}/>
                 <FormControlLabel
                     control={
                     <Checkbox

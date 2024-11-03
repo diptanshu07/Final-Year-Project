@@ -44,7 +44,7 @@ function App() {
   // ])
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={theme} >
       <CssBaseline />
       {/* <Navbar /> */}
       <Header/>
@@ -58,7 +58,7 @@ function App() {
         {/* login page container */}
         
       </Container>
-      <section id="about"><Footer /></section>
+      <section id="footer"><Footer /></section>
     </ThemeProvider>
   );
 }

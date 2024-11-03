@@ -4,9 +4,9 @@ import { Facebook, Twitter, Instagram, LinkedIn, Email, Phone } from '@mui/icons
 
 const Footer = () => {
   return (
-    <Box sx={{ bgcolor: 'black', color: 'white', py: 6 }}>
+    <Box sx={{ bgcolor: 'rgb(237,152,78)', color: 'black', py: 2 }}>
       <Container maxWidth="lg">
-        <Grid container spacing={4}>
+        <Grid container spacing={2}>
           {/* Company Information */}
           <Grid item xs={12} md={6}>
             <Typography variant="h4" gutterBottom>
@@ -20,13 +20,13 @@ const Footer = () => {
           </Grid>
           
           {/* Contact Us Section */}
-          <Grid item xs={12} md={6} sx={{ pl: 4 }}>
+          <Grid item xs={12} md={6} sx={{ textAlign: { xs: 'center', lg: 'right' } }}>
             <Typography variant="h6" gutterBottom>Contact Us</Typography>
-            <Box display="flex" alignItems="center" mb={1}>
+            <Box display="flex" alignItems="center" justifyContent={{ xs: 'center', lg: 'flex-end' }} mb={1}>
               <Email fontSize="small" sx={{ mr: 1 }} />
               <Typography variant="body2">contact@clever.com</Typography>
             </Box>
-            <Box display="flex" alignItems="center">
+            <Box display="flex" alignItems="center" justifyContent={{ xs: 'center', lg: 'flex-end' }}>
               <Phone fontSize="small" sx={{ mr: 1 }} />
               <Typography variant="body2">+91 9000000001</Typography>
             </Box>
