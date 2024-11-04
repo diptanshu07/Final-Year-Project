@@ -24,7 +24,7 @@ const Features = () => {
   ];
 
   return (
-    <Box sx={{ py: 8 }}>
+    <Box sx={{ py: 12 }}>
       <Typography variant="h2" textAlign="center" gutterBottom>
         Trusted by Thousands
       </Typography>
@@ -34,7 +34,7 @@ const Features = () => {
       <Grid container spacing={4} sx={{ mt: 4 }}>
         {features.map((feature, index) => (
           <Grid item xs={12} md={4} key={index}>
-            <Card elevation={0} sx={{ height: '100%', backgroundColor: 'transparent' }}>
+            <Card elevation={0} sx={{ height: '100%', backgroundColor: 'linear-gradient(45deg, #fff8f6 50%, #ffe5e0 90%)' }}>
               <CardContent sx={{ textAlign: 'center' }}>
                 <Box sx={{ color: 'primary.main', mb: 2 }}>{feature.icon}</Box>
                 <Typography variant="h6" gutterBottom>

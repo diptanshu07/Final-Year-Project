@@ -22,7 +22,7 @@ const plans = [
 
 const Pricing = () => {
   return (
-    <Box sx={{ py: 8 }}>
+    <Box sx={{ py: 12 }}>
       <Typography variant="h2" textAlign="center" gutterBottom>
         Choose the Plan That Perfectly Match Yours
       </Typography>

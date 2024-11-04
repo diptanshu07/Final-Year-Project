@@ -2,7 +2,7 @@ import React from 'react';
 // import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { CssBaseline, Container } from '@mui/material';
-import Navbar from './components/Navbar';
+//import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Solutions from './components/Solutions';

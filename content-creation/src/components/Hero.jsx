@@ -29,7 +29,7 @@ const Hero = () => {
           <Typography variant="h6" color="text.secondary" paragraph>
             Clever is dedicated to transforming era of content creation with cutting-edge artificial intelligence.<br></br> Power your content creation engine with Clever.
           </Typography>
-          <Button variant="contained" color="primary" size="large" margin="10">
+          <Button variant="contained" color="primary" size="large">
             Start Creating now!
           </Button>
         </Grid2>
@@ -37,8 +37,7 @@ const Hero = () => {
         <img
           src={Heropng}
           alt="Description of the photo"
-          style={{ width: '100%', height: 'auto'
-           }}
+          style={{ width: '100%', height: 'auto' }}
         />
         </Grid2>
       </Grid2>
