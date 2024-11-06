@@ -70,5 +70,5 @@ streamlining the workflow for businesses and individuals alike.
 generate content efficiently
 
 Landing Page pictures :-
-![image](https://github.com/user-attachments/assets/3b3b9a9f-c754-428a-aed1-0807c0f531e0)
+![image](https://github.com/user-attachments/assets/9a2790a0-07a4-4b5d-af7c-b17743daf965)
 ![image](https://github.com/user-attachments/assets/ee7cf9a0-a869-4867-bace-1d053698841e)
