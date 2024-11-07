@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography, Button, Grid2 } from '@mui/material';
+import { Box, Typography, Button, Grid, Grid2 } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Heropng from "../assets/chat.png"
 
@@ -15,14 +15,14 @@ const HeroSection = styled(Box)(({ theme }) => ({
 const Hero = () => {
   return (
     <HeroSection>
-      <Grid2 
+      <Grid 
           container spacing={4} 
           alignItems="center"
           justifyContent="center"
-          sx={{ maxWidth: '1200px', margin: '0 auto', paddingX: 2 }}
+          sx={{ maxWidth: '1200px', margin: '0 auto',padding: 4}}
         >
 
-        <Grid2 item xs={12} md={6} sx={{ padding: 4 }}>
+        <Grid item xs={12} md={6}>
           <Typography variant="h1" gutterBottom>
             AI-Powered Assistant
           </Typography>
@@ -32,15 +32,15 @@ const Hero = () => {
           <Button variant="contained" color="primary" size="large">
             Start Creating now!
           </Button>
-        </Grid2>
-        <Grid2 item xs={12} md={6}>
-        <img
-          src={Heropng}
-          alt="Description of the photo"
-          style={{ width: '100%', height: 'auto' }}
-        />
-        </Grid2>
-      </Grid2>
+        </Grid>
+        <Grid item xs={12} md={6} display="flex" justifyContent="center" alignItems="center">
+          <img
+            src={Heropng}
+            alt="Description of the photo"
+            style={{ width: '150%', height: 'auto', maxWidth: '500px' }}
+          />
+        </Grid>
+      </Grid>
     </HeroSection>
   );
 };
